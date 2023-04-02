@@ -1,0 +1,15 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .iconss {
+    @apply mx-1 w-12 h-12  bg-gradient-to-bl from-blue-800 via-blue-600 text-white rounded-full;
+  }
+  i.fa {
+    @apply text-2xl;
+  }
+}
