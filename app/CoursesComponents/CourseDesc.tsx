@@ -18,11 +18,19 @@ const CourseDesc = () => {
     const displayData = quarterDetails.find(items=>{
         return items.slug === pid
     })
+    let filterdata;
 
-     const selectQuarter = (e:any) =>{
-        setQuarter(e.currentTarget.id);
-        
+
+
+     const selectQuarter = (quarterValue:string,id:number) =>{
+        setQuarter(quarterValue);
+        console.log("This is quarter ",quarter); 
+
+        // filterdata=displayData?.gridData.map(items=>{
+        //     return items.quarter === quarter
+        // })
     }
+
 
    
   return (
@@ -134,10 +142,10 @@ const CourseDesc = () => {
                         <h5 className='py-2 text-xl font-bold'> Program Structure</h5>
                         <p className='py-2 text-justify'> After finishing the first three quarters, the participants will delve into two specialized quarters specific to their chosen specialization</p>
                         <div className="grid py-5 gap-4 ">
-                        <button onClick={selectQuarter} id="Q1"> <Image src={Quarter1} alt={""}  /></button>
-                        <button onClick={selectQuarter} id="Q2"><Image src={Quarter2} alt={""} /></button>
-                        <button onClick={selectQuarter} id="Q3"><Image src={Quarter3} alt={""}  /></button>
-                        <button onClick={selectQuarter} id="Q4"><Image className='ml-2' src={Quarter4} alt={""} /></button>
+                        <button onClick={()=>selectQuarter('Q1',0)} > <Image src={Quarter1} alt={""}  /></button>
+                        <button onClick={()=>selectQuarter('Q2',1)} id="Q2"><Image src={Quarter2} alt={""} /></button>
+                        <button onClick={()=>selectQuarter('Q3',2)} ><Image src={Quarter3} alt={""}  /></button>
+                        <button onClick={()=>selectQuarter('Q4',3)} ><Image className='ml-2' src={Quarter4} alt={""} /></button>
                         </div>     
            </div>
 

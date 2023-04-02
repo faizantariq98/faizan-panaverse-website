@@ -1,7 +1,7 @@
 
 import Wrapper from "./Wrapper"
 import Image from "next/image"
-import lastImage from '../../public/img.png'
+import preFooterImage from "public/img.png"
 import frame1 from '../../public/Frame1.png'
 import frame2 from '../../public/Frame2.png'
 import frame3 from '../../public/Frame3.png'
@@ -14,7 +14,7 @@ const Prefooter = () => {
         <div className="mt-10 mb-5 px-2 flex justify-center">
             <div className="md:flex flex-col lg:flex-row justify-between">
             <div className="max-w-lg px-2"> 
-                <Image src={lastImage} alt={""}/>
+                <Image src={preFooterImage} alt={""}/>
             </div>
             <div className="my-14 md:max-w-xl px-2">               {/*Right*/}
                 <h1 className="text-3xl pb-3 font-bold">The Outcome for Participants of the Program</h1>
