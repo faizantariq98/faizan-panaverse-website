@@ -4,10 +4,7 @@ import Hero from '../CoursesComponents/Hero'
 import CourseDesc from '../CoursesComponents/CourseDesc'
 
 
-const Courses = ({ params, searchParams }: {
-  params: { courses: string },
-  searchParams: { id: string },
-}) =>
+const Courses = () =>
 {
     return (
       <section>

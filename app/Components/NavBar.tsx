@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 import ButtonDrop from "./ButtonDrop";
 export default function NavBar() {
   return (
-    <header className="sticky top-0  bg-white">
+    <header className="sticky top-0  bg-white z-10">
       <Wrapper>
       <div className="flex flex-wrap justify-between  py-4 px-2  items-center">
         <div>

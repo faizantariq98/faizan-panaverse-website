@@ -14,7 +14,7 @@ const ButtonDrop = () => {
       setDropDown(!dropDown);
     }}>Courses<svg className="w-4 h-4 ml-1" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-    <div className={`${!dropDown ? "hidden":" transition duration-150 ease-out bg-slate-100"} flex flex-col flex-shrink-0 top-20 self-center absolute gap-1 right-4 xl:right-auto bg-white p-3 rounded-md shadow-lg `}>
+    <div className={`${!dropDown ? "hidden":" transition duration-150 ease-out bg-slate-100"} flex flex-col flex-shrink top-20 self-center absolute gap-1 right-4 xl:right-auto bg-white p-3 rounded-md shadow-lg `}>
         <Link href={"/BCC"} className='font-medium' onClick={()=>{setDropDown(!dropDown)}}>BlockChain</Link>
         <Link href={"/IOT"}className='font-medium' onClick={()=>{setDropDown(!dropDown)}}>Internet of Things</Link>
         <Link href={"/AI"}className='font-medium' onClick={()=>{setDropDown(!dropDown)}}>Artificial Intelligence</Link>
