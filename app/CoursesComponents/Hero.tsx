@@ -24,7 +24,7 @@ const Hero = () => {
                             <h6 className='text-lg font-bold text-green-400 py-4' >
                                 Specialized Track
                             </h6>
-                            <h1 className='text-5xl font-bold py-6 text-white text-justify'>
+                            <h1 className='text-5xl font-bold py-6 text-white '>
                                {dispData?.title}
                             </h1>
                             <p className='text-white font-mono text-justify pt-3 pb-7 pr-2'>
