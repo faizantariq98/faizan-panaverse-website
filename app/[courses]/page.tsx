@@ -10,7 +10,7 @@ const Courses = () =>
 {
   const pid= usePathname();
 
-  if(pid === '/BCC'||pid === '/CNC'||pid === 'IOT'||pid === 'AI'){
+  if(pid === '/BCC'||pid === '/CNC'||pid === '/IOT'||pid === '/AI'){
     return (
       <section>
         <Hero />
